@@ -1,63 +1,81 @@
 
 // array holds the questions
-var q = ["What is 1 + 1?<br /><br />",
- "What is 2 + 2?<br /><br />", 
- "What is 3 + 3?<br /><br />", 
- "What is 4 + 4?<br /><br />", 
- "What is 5 + 5?<br /><br />",
-"What is 6 + 6?<br /><br />", 
-"What is 7 + 7?<br /><br />",
- "What is 8 + 8?<br /><br />", 
- "What is 9 + 9?<br /><br />",
-  "What is 9 + 1?<br /><br />"];
+var q = ["Who would have become king of England had they won the battle at Colluden in 1745?",
+ "Major Ridge, a Cherokee, earned his unofficial title while serving with what US officer?", 
+ "Union Maj. Gen. John Pope fought against what famous Confederate general at the Battle of Chantilly?", 
+ "What kind of scandal was the Teapot Dome Scandal?", 
+ "The 30 Years War was fought largely in what emprie of the time?",
+"Henry Berry Lowrie was a guerilla fighter during what US conflict?", 
+"The Battle of Arcole or Battle of Arcola was fought in what country?",
+ 'What battleground town of WWI was the famous "illegal" trench magazine the "Wipers Times" originated in?',
+ "With over 240 years of service, this ship is the world's oldest ship still in service",
+  "This man has the dubious fame of being the United States' first traitor"];
 
 // each array holds the answer choices as well as the html for next question
-var a1 = ["<button class=buttons002 onclick=q1c()>2</button>",
-          "<button class=buttons002 onclick=q2c()>4</button>",
-          "<button class=buttons002 onclick=q3c()>6</button>",
-          "<button class=buttons002 onclick=q4i()>13</button>",
-          "<button class=buttons002 onclick=q5i()>6</button>",
-          "<button class=buttons002 onclick=q6i()>4</button>",
-          "<button class=buttons002 onclick=q7i()>8</button>",
-          "<button class=buttons002 onclick=q8i()>13</button>",
-          "<button class=buttons002 onclick=q9i()>8</button>",
-          "<button class=buttons002 onclick=q10i()>14</button>"];
+var a1 = ["<button class=buttons002 onclick=q1c()>Bonnie Prince Charlie</button>",
+          "<button class=buttons002 onclick=q2c()>Andrew Jackson</button>",
+          "<button class=buttons002 onclick=q3i()>Franklin Gardner</button>",
+          "<button class=buttons002 onclick=q4i()>Sex Scandal</button>",
+          "<button class=buttons002 onclick=q5i()>Britian</button>",
+          "<button class=buttons002 onclick=q6i()>WWII</button>",
+          "<button class=buttons002 onclick=q7i()>Austria</button>",
+          "<button class=buttons002 onclick=q8i()>Paris</button>",
+          "<button class=buttons002 onclick=q9i()>C.S.S. Hunley</button>",
+          "<button class=buttons002 onclick=q10i()>Mordechai Vanunu</button>"];
 
-        var a2 = ["<button class=buttons002 onclick=q1i()>5</button>",
-                  "<button class=buttons002 onclick=q2i()>7</button>",
-                  "<button class=buttons002 onclick=q3i()>2</button>",
-                  "<button class=buttons002 onclick=q4c()>8</button>",
-                  "<button class=buttons002 onclick=q5c()>10</button>",
-                  "<button class=buttons002 onclick=q6c()>12</button>",
-                  "<button class=buttons002 onclick=q7i()>17</button>",
-                  "<button class=buttons002 onclick=q8i()>5</button>",
-                  "<button class=buttons002 onclick=q9i()>17</button>",
-                  "<button class=buttons002 onclick=q10i()>12</button>"];
+        var a2 = ["<button class=buttons002 onclick=q1i()>Duke Wellington</button>",
+                  "<button class=buttons002 onclick=q2i()>Ulysses S. Grant</button>",
+                  '<button class=buttons002 onclick=q3c()>Thomas J. "Stonewall" Jackson </button>',
+                  "<button class=buttons002 onclick=q4c()>Bribery Scandal</button>",
+                  "<button class=buttons002 onclick=q5c()>Holy Roman Empire</button>",
+                  "<button class=buttons002 onclick=q6i()>Spanish American War</button>",
+                  "<button class=buttons002 onclick=q7i()>Spain</button>",
+                  "<button class=buttons002 onclick=q8i()>Somme</button>",
+                  "<button class=buttons002 onclick=q9i()>U.S.S. Monitor</button>",
+                  "<button class=buttons002 onclick=q10i()>Vidkun Quisling</button>"];
 
-        var a3 = ["<button class=buttons002 onclick=q1i()>7</button>",
-                  "<button class=buttons002 onclick=q2i()>6</button>",
-                  "<button class=buttons002 onclick=q3i()>9</button>",
-                  "<button class=buttons002 onclick=q4i()>9</button>",
-                  "<button class=buttons002 onclick=q5i()>7</button>",
-                  "<button class=buttons002 onclick=q6i()>9</button>",
-                  "<button class=buttons002 onclick=q7c()>14</button>",
-                  "<button class=buttons002 onclick=q8c()>16</button>",
-                  "<button class=buttons002 onclick=q9i()>2</button>",
-                  "<button class=buttons002 onclick=q10i()>9</button>"];
+        var a3 = ["<button class=buttons002 onclick=q1i()>Duke of Earle</button>",
+                  "<button class=buttons002 onclick=q2i()>Goerge Patton</button>",
+                  "<button class=buttons002 onclick=q3i()>Robert E. Lee</button>",
+                  "<button class=buttons002 onclick=q4i()>Embezzelement Scandal</button>",
+                  "<button class=buttons002 onclick=q5i()>Ottoman</button>",
+                  "<button class=buttons002 onclick=q6c()>US Civil War</button>",
+                  "<button class=buttons002 onclick=q7c()>France</button>",
+                  "<button class=buttons002 onclick=q8c()>Ypres</button>",
+                  "<button class=buttons002 onclick=q9i()>Cutty Sark</button>",
+                  "<button class=buttons002 onclick=q10i()>Patrick Stanley Vaughan Heenan</button>"];
 
-        var a4 = ["<button class=buttons002 onclick=q1i()>8</button>",
-                  "<button class=buttons002 onclick=q2i()>2</button>",
-                  "<button class=buttons002 onclick=q3i()>14</button>",
-                  "<button class=buttons002 onclick=q4i()>1</button>",
-                  "<button class=buttons002 onclick=q5i()>2</button>",
-                  "<button class=buttons002 onclick=q6i()>8</button>",
-                  "<button class=buttons002 onclick=q7i()>2</button>",
-                  "<button class=buttons002 onclick=q8i()>9</button>",
-                  "<button class=buttons002 onclick=q9c()>16</button>",
-                  "<button class=buttons002 onclick=q10c()>10</button>"];
+        var a4 = ["<button class=buttons002 onclick=q1i()>Thomas Moore</button>",
+                  "<button class=buttons002 onclick=q2i()>John J. Pershing</button>",
+                  "<button class=buttons002 onclick=q3i()>Nathan Bedford Forrest </button>",
+                  "<button class=buttons002 onclick=q4i()>National Security Scandal</button>",
+                  "<button class=buttons002 onclick=q5i()>Roman</button>",
+                  "<button class=buttons002 onclick=q6i()>Vietnam</button>",
+                  "<button class=buttons002 onclick=q7i()>Germany</button>",
+                  "<button class=buttons002 onclick=q8i()>Brandonberg</button>",
+                  "<button class=buttons002 onclick=q9c()>HMS Victory</button>",
+                  "<button class=buttons002 onclick=q10c()>Benedict Arnold</button>"];
 
-var c=["correct","correct","correct","correct","correct","correct","correct","correct","correct","correct"]
-var i = ["Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect"];
+var c=["Bonnie Prince Charlie",
+"Andrew Jackson",
+'Thomas J. "Stonewall" Jackson',
+"Bribery Scandal",
+"Holy Roman Empire",
+"US Civil War",
+"France",
+"Ypres",
+"HMS Victory",
+"Benedict Arnold"]
+var i = ["Incorrect, it was Bonnie Prince Charlie", 
+"Incorrect, it was Andrew Jackson",
+ 'Incorrect, it was Thomas J. "Stonewall" Jackson', 
+ "Incorrect, it was a Bribery Scandal",
+  "Incorrect, it was the Holy Roman Empire",
+   "Incorrect, it was the US Civil War", 
+   "Incorrect, it is in France",
+    "Incorrect, it was in Ypres",
+     "Incorrect, it was the HMS Victory",
+      "Incorrect, it was Benedict Arnold"];
 
 var n = 0;
 n++;
@@ -69,10 +87,8 @@ var counter = 0;
 
 // function to begin quiz on button click
 function begin001() {
-
+    // how the image chages for each question
     document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/culloden.jpg";
-
-    // replace001.HTML = ;
     // this part makes "click to begin" go invisible
     disappear001.innerHTML = "";
     // this part covers the button
@@ -112,6 +128,7 @@ function q1i() {
 
 
 function new002() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/Major_ridge.jpg";
     question001.innerHTML = q[1];
     option001.innerHTML = a1[1];
     option002.innerHTML = a2[1];
@@ -142,6 +159,7 @@ function q2i() {
 }
 
 function new003() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/battle-of-chantilly.jpg";
     question001.innerHTML = q[2];
     option001.innerHTML = a1[2];
     option002.innerHTML = a2[2];
@@ -173,6 +191,7 @@ function q3i() {
 
 
 function new004() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/TeapotDomecartoon.jpg";
     question001.innerHTML = q[3];
     option001.innerHTML = a1[3];
     option002.innerHTML = a2[3];
@@ -203,6 +222,7 @@ function q4i() {
 }
 
 function new005() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/30_year_war.jpg";
     question001.innerHTML = q[4];
     option001.innerHTML = a1[4];
     option002.innerHTML = a2[4];
@@ -233,6 +253,7 @@ function q5i() {
 }
 
 function new006() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/Henry_Berry_Lowrie.jpg";
     question001.innerHTML = q[5];
     option001.innerHTML = a1[5];
     option002.innerHTML = a2[5];
@@ -263,6 +284,7 @@ function q6i() {
 }
 
 function new007() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/the-battle-of-pont-darcole-emile-jean-horace-vernet.jpg";
     question001.innerHTML = q[6];
     option001.innerHTML = a1[6];
     option002.innerHTML = a2[6];
@@ -293,6 +315,7 @@ function q7i() {
 }
 
 function new008() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/wwi.jpg";
     question001.innerHTML = q[7];
     option001.innerHTML = a1[7];
     option002.innerHTML = a2[7];
@@ -323,6 +346,7 @@ function q8i() {
 }
 
 function new009() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/hms-victory-robert-ernest-roe.jpg";
     question001.innerHTML = q[8];
     option001.innerHTML = a1[8];
     option002.innerHTML = a2[8];
@@ -353,6 +377,7 @@ function q9i() {
 }
 
 function new010() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/Benedict.jpg";
     question001.innerHTML = q[9];
     option001.innerHTML = a1[9];
     option002.innerHTML = a2[9];
@@ -364,6 +389,7 @@ function new010() {
 }
 
 function q10c() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/end.jpg";
     answer001.innerHTML = "<div id=green001>" + c[9] + "</div>";
     option001.innerHTML = "";
     option002.innerHTML = "";
@@ -374,6 +400,7 @@ function q10c() {
 }
 
 function q10i() {
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/end.jpg";
     answer001.innerHTML = "<div id=red001>" + i[9] + "</div>";
     option001.innerHTML = "";
     option002.innerHTML = "";
