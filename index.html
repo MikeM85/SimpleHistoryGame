@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<title>Quiz</title>
+</head>
+<body>
+ 
+    <div id ="frame001">
+        <div id="text001">
+            <h1 id="replace001">Quiz</h1>
+            
+            <p id="timer">You will have 2 minutes to complete this quiz</p>
+            <p>Question: <text id="number001">0</text></p>
+            <p>Score: <text id="score001">0</text></p>
+    
+        <hr/>
+            <div id="message001">Click to Begin</div>
+        </div>
+
+        <div id="text002">
+            <p id="question001"></p>
+            <p id="option001"></p>
+            <p id="option002"></p>
+            <p id="option003"></p>
+            <p id="option004"></p>
+            <p id="answer001"></p>
+        </div>
+        <div id="text001">
+            <div id="disappear001">
+                <!-- links click to begin quiz -->
+                <button class="buttons001" onclick="begin001(), timeOnstart()">Start</button>
+                
+            </div>
+        </div>
+        <!-- to display next button -->
+        <div id="next001"></div>
+    </div>
+     
+    
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type='text/javascript' src='assets/java/game.js'></script>	
+</body>
+</html>
