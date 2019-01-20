@@ -70,7 +70,9 @@ var counter = 0;
 // function to begin quiz on button click
 function begin001() {
 
-    // replace001.innerHTML = url("images/Scotland_Forever!\ copy.jpg");
+    document.getElementById("replace001").src = "../SimpleHistoryGame/assets/images/culloden.jpg";
+
+    // replace001.HTML = ;
     // this part makes "click to begin" go invisible
     disappear001.innerHTML = "";
     // this part covers the button
@@ -396,16 +398,21 @@ function repeat001(){
 }
 
 
-// var advanceQuestions = ["new003();","new004();","new005();"]
 
 // counts behind the scenes
     function timeOnstart() {
         var secondsDown = 120;
-	 var timeIntervalUp = setInterval(function(){startTimer()}, 1000);
-    
+        // var minutesDown = 2;
+
+	 var timeIntervalUp = setInterval(function(){
+        
+         startTimer
+         ()},1000);
+     
     //  display counter
     function startTimer(){ 
-            document.getElementById("timer").innerHTML = "Time Remaining: " + secondsDown;
+            document.getElementById("timer").innerHTML = "Time Remaining in seconds :" + secondsDown;
+            // minutesDown--;
             secondsDown--;
             
             // starts quiz automatically/ next question

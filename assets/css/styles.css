@@ -1,9 +1,10 @@
 body {
-    background-image: url("images/Scotland_Forever!\ copy.jpg");
+    background-image: url("../images/Scotland_Forever!\ copy.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
     #frame001 {
         background-color: white;
         border: 4px solid black;
